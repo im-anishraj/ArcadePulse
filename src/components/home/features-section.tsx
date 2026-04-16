@@ -33,7 +33,7 @@ export default function FeaturesSection() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             Features That Set ArcadeCalc Apart
           </h2>
-          <p className="text-[var(--text-secondary)] max-w-2xl mx-auto">
+          <p className="text-(--text-secondary) max-w-2xl mx-auto">
             Everything you need to master Google Cloud Arcade, beautifully organized and always at your fingertips.
           </p>
         </motion.div>
@@ -50,11 +50,11 @@ export default function FeaturesSection() {
                 transition={{ delay: index * 0.1 }}
                 className="card p-6 hover:scale-[1.02] cursor-default"
               >
-                <div className="w-12 h-12 rounded-xl bg-[var(--accent)]/10 flex items-center justify-center mb-4">
-                  {Icon && <Icon size={24} className="text-[var(--accent)]" />}
+                <div className="w-12 h-12 rounded-xl bg-(--accent)/10 flex items-center justify-center mb-4">
+                  {Icon && <Icon size={24} className="text-(--accent)" />}
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-                <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+                <p className="text-sm text-(--text-secondary) leading-relaxed">
                   {feature.description}
                 </p>
               </motion.div>

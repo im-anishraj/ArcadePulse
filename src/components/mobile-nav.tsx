@@ -49,7 +49,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
                 <span className="text-lg font-bold gradient-text">ArcadeCalc</span>
                 <button
                   onClick={onClose}
-                  className="p-2 rounded-full bg-[var(--bg-card)] border border-[var(--border-color)] text-[var(--text-secondary)]"
+                  className="p-2 rounded-full bg-(--bg-card) border border-(--border-color) text-(--text-secondary)"
                 >
                   <X size={18} />
                 </button>
@@ -71,7 +71,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
                         'flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200',
                         isActive
                           ? 'bg-purple-primary/15 text-purple-primary'
-                          : 'hover:bg-white/5 text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                          : 'hover:bg-white/5 text-(--text-secondary) hover:text-(--text-primary)'
                       )}
                     >
                       {Icon && <Icon size={20} />}

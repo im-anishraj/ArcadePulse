@@ -18,7 +18,7 @@ export default function MilestoneTracker() {
           {/* Milestone Header */}
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-2">
-              <span className="text-sm font-bold text-[var(--text-muted)]">
+              <span className="text-sm font-bold text-(--text-muted)">
                 {milestone.level}.
               </span>
               <h3 className="font-bold">{milestone.name}</h3>
@@ -40,7 +40,7 @@ export default function MilestoneTracker() {
           <div className="flex flex-col items-center justify-center py-4 opacity-80">
             <AlertCircle size={32} className="text-yellow-500 mb-2" />
             <p className="font-semibold text-sm">This Event Not Live Yet</p>
-            <p className="text-xs text-[var(--text-secondary)] text-center mt-1">
+            <p className="text-xs text-(--text-secondary) text-center mt-1">
               This event is coming soon! Complete milestones to earn free bonus points when it goes live.
             </p>
           </div>
@@ -67,11 +67,11 @@ function RequirementBox({
   required: number;
 }) {
   return (
-    <div className="text-center p-2 rounded-lg bg-[var(--bg-primary)]/50 border border-[var(--border-color)]">
-      <div className="text-xs text-[var(--text-muted)] mb-1 truncate">{label}</div>
+    <div className="text-center p-2 rounded-lg bg-(--bg-primary)/50 border border-(--border-color)">
+      <div className="text-xs text-(--text-muted) mb-1 truncate">{label}</div>
       <div className="text-sm font-bold">
         <span className={current >= required ? 'text-green-400' : ''}>{current}</span>
-        <span className="text-[var(--text-muted)]">/{required}</span>
+        <span className="text-(--text-muted)">/{required}</span>
       </div>
     </div>
   );

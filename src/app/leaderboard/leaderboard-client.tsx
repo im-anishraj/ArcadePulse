@@ -21,10 +21,10 @@ export default function LeaderboardClient() {
         <h1 className="text-3xl sm:text-4xl font-extrabold mb-4">
           🏆 Arcade Leaderboard 🏆
         </h1>
-        <p className="text-[var(--text-secondary)] max-w-xl mx-auto">
+        <p className="text-(--text-secondary) max-w-xl mx-auto">
           Climb the ranks, earn exclusive rewards, and secure your spot among the top achievers!
         </p>
-        <p className="text-sm text-[var(--accent)] mt-2">
+        <p className="text-sm text-(--accent) mt-2">
           ✨ Top achievers can earn exclusive vouchers from the Arcade Team. ✨
         </p>
       </motion.div>
@@ -43,7 +43,7 @@ export default function LeaderboardClient() {
         className="card p-8 mt-8 text-center"
       >
         <h3 className="text-lg font-bold mb-2">Want to win exclusive rewards?</h3>
-        <p className="text-sm text-[var(--text-secondary)]">
+        <p className="text-sm text-(--text-secondary)">
           Keep earning points and climb the leaderboard to receive Arcade-exclusive rewards!
         </p>
       </motion.div>

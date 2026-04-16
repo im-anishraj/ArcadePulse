@@ -19,42 +19,42 @@ export default function BadgeCategories() {
       <div className="flex items-center justify-between mb-6">
         <div>
           <h3 className="text-xl font-bold">Badge Categories</h3>
-          <p className="text-sm text-[var(--text-secondary)]">
+          <p className="text-sm text-(--text-secondary)">
             Track your progress across different badge types
           </p>
         </div>
-        <span className="px-3 py-1.5 rounded-full text-xs font-semibold bg-[var(--accent)]/10 text-[var(--accent)] border border-[var(--accent)]/20">
+        <span className="px-3 py-1.5 rounded-full text-xs font-semibold bg-(--accent)/10 text-(--accent) border border-(--accent)/20">
           ● {seasonBadges} badges this season
         </span>
       </div>
 
       {/* Table Header */}
-      <div className="grid grid-cols-[1fr_80px_80px_40px] gap-4 px-4 py-2 text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider">
+      <div className="grid grid-cols-[1fr_80px_80px_40px] gap-4 px-4 py-2 text-xs font-semibold text-(--text-muted) uppercase tracking-wider">
         <span>Category</span>
         <span className="text-center">Badges</span>
-        <span className="text-center text-[var(--accent)]">Points</span>
+        <span className="text-center text-(--accent)">Points</span>
         <span />
       </div>
 
       {/* Category Rows */}
-      <div className="divide-y divide-[var(--border-color)]">
+      <div className="divide-y divide-(--border-color)">
         {categories.map((cat) => (
           <div key={cat.key}>
             <button
               onClick={() => setExpanded(expanded === cat.key ? null : cat.key)}
-              className="w-full grid grid-cols-[1fr_80px_80px_40px] gap-4 items-center px-4 py-3.5 hover:bg-[var(--bg-primary)]/30 transition-colors"
+              className="w-full grid grid-cols-[1fr_80px_80px_40px] gap-4 items-center px-4 py-3.5 hover:bg-(--bg-primary)/30 transition-colors"
             >
               <div className="flex items-center gap-3">
-                <Trophy size={16} className="text-[var(--accent)] flex-shrink-0" />
+                <Trophy size={16} className="text-(--accent) shrink-0" />
                 <span className="text-sm font-medium">{cat.label}</span>
               </div>
               <span className="text-sm text-center font-semibold">{cat.count}</span>
-              <span className="text-sm text-center font-semibold text-[var(--accent)]">{cat.points}</span>
+              <span className="text-sm text-center font-semibold text-(--accent)">{cat.points}</span>
               <motion.div
                 animate={{ rotate: expanded === cat.key ? 180 : 0 }}
                 transition={{ duration: 0.2 }}
               >
-                <ChevronDown size={16} className="text-[var(--text-muted)]" />
+                <ChevronDown size={16} className="text-(--text-muted)" />
               </motion.div>
             </button>
 
@@ -67,7 +67,7 @@ export default function BadgeCategories() {
                   transition={{ duration: 0.2 }}
                   className="overflow-hidden"
                 >
-                  <div className="px-6 py-4 bg-[var(--bg-primary)]/20">
+                  <div className="px-6 py-4 bg-(--bg-primary)/20">
                     {badges.filter((b) => b.category === cat.key && b.completed).length > 0 ? (
                       <ul className="space-y-2">
                         {badges
@@ -75,15 +75,15 @@ export default function BadgeCategories() {
                           .map((badge) => (
                             <li
                               key={badge.id}
-                              className="flex items-center gap-2 text-sm text-[var(--text-secondary)]"
+                              className="flex items-center gap-2 text-sm text-(--text-secondary)"
                             >
-                              <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)]" />
+                              <span className="w-1.5 h-1.5 rounded-full bg-(--accent)" />
                               {badge.title}
                             </li>
                           ))}
                       </ul>
                     ) : (
-                      <p className="text-sm text-[var(--text-muted)]">
+                      <p className="text-sm text-(--text-muted)">
                         No badges earned in this category yet.
                       </p>
                     )}
@@ -98,12 +98,12 @@ export default function BadgeCategories() {
       {/* Info Note */}
       <div className="mt-4 p-4 rounded-xl bg-blue-500/5 border border-blue-500/15">
         <div className="flex gap-2">
-          <Info size={16} className="text-blue-400 flex-shrink-0 mt-0.5" />
-          <div className="text-xs text-[var(--text-secondary)]">
+          <Info size={16} className="text-blue-400 shrink-0 mt-0.5" />
+          <div className="text-xs text-(--text-secondary)">
             <p>
               Some badges can&apos;t be tracked as only the first 50 users to complete them earn points.
             </p>
-            <a href="/resources/non-trackable-badges" className="text-[var(--accent)] hover:underline">
+            <a href="/resources/non-trackable-badges" className="text-(--accent) hover:underline">
               View the list of those badges here →
             </a>
           </div>

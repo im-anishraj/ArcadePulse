@@ -46,13 +46,13 @@ export default function Podium({ top3 }: PodiumProps) {
           </h3>
 
           {/* Points Badge */}
-          <span className="px-3 py-1 rounded-full text-xs font-bold bg-[var(--accent)]/15 text-[var(--accent)] border border-[var(--accent)]/25 mb-3">
+          <span className="px-3 py-1 rounded-full text-xs font-bold bg-(--accent)/15 text-(--accent) border border-(--accent)/25 mb-3">
             {entry.points} points
           </span>
 
           {/* Podium Block */}
           <div
-            className={`${heights[i]} w-32 rounded-t-xl bg-gradient-to-b from-[var(--bg-card)] to-[var(--bg-primary)] border border-[var(--border-color)] border-b-0`}
+            className={`${heights[i]} w-32 rounded-t-xl bg-linear-to-b from-(--bg-card) to-(--bg-primary) border border-(--border-color) border-b-0`}
           />
         </motion.div>
       ))}

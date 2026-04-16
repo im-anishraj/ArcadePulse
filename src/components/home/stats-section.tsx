@@ -68,10 +68,10 @@ function StatCounter({
       <div className="text-3xl sm:text-4xl font-extrabold gradient-text mb-2">
         {formatNumber(value)}+
       </div>
-      <div className="text-sm font-semibold text-[var(--text-primary)] mb-1">
+      <div className="text-sm font-semibold text-(--text-primary) mb-1">
         {stat.label}
       </div>
-      <div className="text-xs text-[var(--text-muted)]">{stat.sublabel}</div>
+      <div className="text-xs text-(--text-muted)">{stat.sublabel}</div>
     </motion.div>
   );
 }
