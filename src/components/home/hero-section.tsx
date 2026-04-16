@@ -58,7 +58,7 @@ export default function HeroSection() {
             href="https://t.me/arcadecalc01"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[var(--accent)] font-semibold hover:underline"
+            className="text-(--accent) font-semibold hover:underline"
           >
             Telegram Community
           </a>{' '}
@@ -82,7 +82,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-lg text-[var(--text-secondary)] mb-4 max-w-2xl mx-auto"
+          className="text-lg text-(--text-secondary) mb-4 max-w-2xl mx-auto"
         >
           Track your progress, analyze your achievements, and stay ahead in the Arcade with ArcadeCalc.
         </motion.p>
@@ -91,7 +91,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.25 }}
-          className="text-sm text-[var(--text-secondary)] mb-8"
+          className="text-sm text-(--text-secondary) mb-8"
         >
           Enter your Google Cloud SkillBoost profile URL to calculate your Arcade Points instantly!
         </motion.p>
@@ -111,7 +111,7 @@ export default function HeroSection() {
               setError('');
             }}
             placeholder="Enter your SkillBoost profile URL"
-            className="flex-1 px-6 py-4 rounded-xl bg-[var(--bg-card)] border border-[var(--border-color)] text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:outline-none focus:border-[var(--accent)] transition-colors text-sm"
+            className="flex-1 px-6 py-4 rounded-xl bg-(--bg-card) border border-(--border-color) text-(--text-primary) placeholder-(--text-muted) focus:outline-none focus:border-(--accent) transition-colors text-sm"
             onKeyDown={(e) => e.key === 'Enter' && handleSubmit()}
           />
           <button
@@ -135,7 +135,7 @@ export default function HeroSection() {
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="text-sm text-[var(--color-red-error)] mb-4"
+            className="text-sm text-(--color-red-error) mb-4"
           >
             {error}
           </motion.p>
@@ -146,11 +146,11 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="flex items-center justify-center gap-1 text-sm text-[var(--text-muted)]"
+          className="flex items-center justify-center gap-1 text-sm text-(--text-muted)"
         >
           <HelpCircle size={14} />
           Having trouble finding your public profile URL?{' '}
-          <Link href="/resources/find-your-public-url" className="text-[var(--accent)] hover:underline font-medium">
+          <Link href="/resources/find-your-public-url" className="text-(--accent) hover:underline font-medium">
             Click here for help
           </Link>
         </motion.div>
@@ -163,9 +163,9 @@ export default function HeroSection() {
           className="mt-6 text-center"
         >
           <p className="text-sm">
-            <span className="text-[var(--accent)]">✨ No need to enter your profile ever again!</span>
+            <span className="text-(--accent)">✨ No need to enter your profile ever again!</span>
           </p>
-          <p className="text-xs text-[var(--text-secondary)]">
+          <p className="text-xs text-(--text-secondary)">
             Your accounts are saved, and you can switch between multiple profiles effortlessly from the navbar.
           </p>
         </motion.div>

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTheme } from 'next-themes';
@@ -33,8 +33,14 @@ const ICON_MAP: Record<string, React.ComponentType<{ size?: number; className?: 
 export default function Navbar() {
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const activeProfile = useProfileStore((s) => s.activeProfile);
+
+  // Avoid hydration mismatch by waiting for mount
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const toggleTheme = () => setTheme(theme === 'dark' ? 'light' : 'dark');
 
@@ -59,7 +65,7 @@ export default function Navbar() {
                       'flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200',
                       isActive
                         ? 'bg-purple-primary/15 text-purple-primary'
-                        : 'hover:bg-white/5 text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                        : 'hover:bg-white/5 text-(--text-secondary) hover:text-(--text-primary)'
                     )}
                   >
                     {Icon && <Icon size={18} />}
@@ -72,7 +78,7 @@ export default function Navbar() {
             {/* ── Right Actions ── */}
             <div className="flex items-center gap-3">
               <button
-                className="p-2.5 rounded-full bg-[var(--bg-card)] border border-[var(--border-color)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
+                className="p-2.5 rounded-full bg-(--bg-card) border border-(--border-color) text-(--text-secondary) hover:text-(--text-primary) transition-colors"
                 title="Notifications"
               >
                 <Bell size={18} />
@@ -95,16 +101,20 @@ export default function Navbar() {
               {/* Theme Toggle */}
               <button
                 onClick={toggleTheme}
-                className="p-2.5 rounded-full bg-[var(--bg-card)] border border-[var(--border-color)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
+                className="p-2.5 rounded-full bg-(--bg-card) border border-(--border-color) text-(--text-secondary) hover:text-(--text-primary) transition-colors"
                 title="Toggle theme"
               >
-                {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+                {mounted ? (
+                  theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />
+                ) : (
+                  <Sun size={18} className="opacity-0" />
+                )}
               </button>
 
               {/* Mobile Menu Button */}
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}
-                className="md:hidden p-2.5 rounded-full bg-[var(--bg-card)] border border-[var(--border-color)] text-[var(--text-secondary)]"
+                className="md:hidden p-2.5 rounded-full bg-(--bg-card) border border-(--border-color) text-(--text-secondary)"
               >
                 {mobileOpen ? <X size={18} /> : <Menu size={18} />}
               </button>

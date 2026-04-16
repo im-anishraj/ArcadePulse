@@ -51,12 +51,12 @@ export default function IncompleteBadges() {
               className={cn(
                 'px-4 py-2 rounded-full text-sm font-medium transition-all border',
                 activeTab === tab.key
-                  ? 'bg-[var(--accent)]/15 text-[var(--accent)] border-[var(--accent)]/30'
-                  : 'bg-transparent text-[var(--text-secondary)] border-[var(--border-color)] hover:border-[var(--accent)]/30'
+                  ? 'bg-(--accent)/15 text-(--accent) border-(--accent)/30'
+                  : 'bg-transparent text-(--text-secondary) border-(--border-color) hover:border-(--accent)/30'
               )}
             >
               {tab.label}{' '}
-              <span className="ml-1 px-1.5 py-0.5 rounded-md bg-[var(--bg-primary)] text-xs">
+              <span className="ml-1 px-1.5 py-0.5 rounded-md bg-(--bg-primary) text-xs">
                 {counts[tab.key]}
               </span>
             </button>
@@ -64,13 +64,13 @@ export default function IncompleteBadges() {
         </div>
 
         <div className="relative w-full sm:w-64">
-          <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" />
+          <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-(--text-muted)" />
           <input
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search badges..."
-            className="w-full pl-9 pr-4 py-2.5 rounded-xl bg-[var(--bg-primary)] border border-[var(--border-color)] text-sm text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:outline-none focus:border-[var(--accent)] transition-colors"
+            className="w-full pl-9 pr-4 py-2.5 rounded-xl bg-(--bg-primary) border border-(--border-color) text-sm text-(--text-primary) placeholder-(--text-muted) focus:outline-none focus:border-(--accent) transition-colors"
           />
         </div>
       </div>
@@ -86,8 +86,8 @@ export default function IncompleteBadges() {
             className="card p-4 hover:scale-[1.02]"
           >
             <div className="flex items-start gap-3">
-              <div className="w-14 h-14 rounded-xl bg-[var(--bg-primary)] border border-[var(--border-color)] flex items-center justify-center flex-shrink-0">
-                <Trophy size={20} className="text-[var(--text-muted)]" />
+              <div className="w-14 h-14 rounded-xl bg-(--bg-primary) border border-(--border-color) flex items-center justify-center shrink-0">
+                <Trophy size={20} className="text-(--text-muted)" />
               </div>
               <div className="flex-1 min-w-0">
                 <span
@@ -103,7 +103,7 @@ export default function IncompleteBadges() {
                   {badge.category}
                 </span>
                 <h4 className="text-sm font-semibold truncate">{badge.title}</h4>
-                <p className="text-xs text-[var(--text-muted)] line-clamp-2 mt-0.5">
+                <p className="text-xs text-(--text-muted) line-clamp-2 mt-0.5">
                   {badge.description}
                 </p>
               </div>
@@ -114,7 +114,7 @@ export default function IncompleteBadges() {
 
       {filtered.length > 12 && (
         <div className="text-center mt-6">
-          <p className="text-sm text-[var(--text-muted)]">
+          <p className="text-sm text-(--text-muted)">
             Showing 12 of {filtered.length} incomplete badges
           </p>
         </div>

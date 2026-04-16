@@ -14,7 +14,7 @@ export default function SwagsTier() {
     <div className="card p-6">
       <div className="flex items-center gap-2 mb-6">
         <h3 className="font-semibold">Swags Tier Progress</h3>
-        <Info size={16} className="text-[var(--text-muted)]" />
+        <Info size={16} className="text-(--text-muted)" />
       </div>
 
       <div className="space-y-4">
@@ -32,8 +32,8 @@ export default function SwagsTier() {
             >
               {/* Status dot */}
               <div
-                className={`w-3 h-3 rounded-full flex-shrink-0 ${
-                  isComplete ? 'bg-green-400' : 'bg-[var(--border-color)]'
+                className={`w-3 h-3 rounded-full shrink-0 ${
+                  isComplete ? 'bg-green-400' : 'bg-(--border-color)'
                 }`}
               />
 
@@ -43,7 +43,7 @@ export default function SwagsTier() {
                   <span className="text-sm font-medium truncate">
                     {tier.name}
                   </span>
-                  <span className="text-xs text-[var(--text-muted)] flex-shrink-0">
+                  <span className="text-xs text-(--text-muted) shrink-0">
                     {points}/{tier.pointsRequired} pts.
                   </span>
                 </div>

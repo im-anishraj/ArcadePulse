@@ -16,7 +16,7 @@ export default function ResourcesPage() {
         <h1 className="text-3xl sm:text-4xl font-extrabold mb-4">
           Resources & Guides
         </h1>
-        <p className="text-[var(--text-secondary)] max-w-2xl mx-auto">
+        <p className="text-(--text-secondary) max-w-2xl mx-auto">
           Explore our comprehensive collection of guides, tutorials, and community resources to enhance your Google Cloud Arcade journey.
         </p>
       </div>

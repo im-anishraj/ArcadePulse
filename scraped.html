@@ -1,0 +1,614 @@
+
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>Anish Raj | Google Skills</title>
+<link crossorigin href='https://cdn.qwiklabs.com' rel='preconnect'>
+<link crossorigin href='https://fonts.gstatic.com' rel='preconnect'>
+<link crossorigin href='https://fonts.googleapis.com' rel='preconnect'>
+<link as='font' crossorigin='anonymous' href='https://cdn.qwiklabs.com/fonts/google-symbols.woff2' rel='preload' type='font/woff2'>
+<link as='font' crossorigin='anonymous' href='https://cdn.qwiklabs.com/fonts/material-icons.woff2' rel='preload' type='font/woff2'>
+<link as='font' crossorigin='anonymous' href='https://cdn.qwiklabs.com/fonts/google-material-icons.woff2' rel='preload' type='font/woff2'>
+<style>
+  @mixin font_face_props {
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+  }
+  
+  @font-face {
+    @include font_face_props;
+  
+    font-family: 'Google Material Icons';
+    src: url('https://cdn.qwiklabs.com/fonts/google-material-icons.woff2') format('woff2');
+  }
+  
+  @font-face {
+    @include font_face_props;
+  
+    font-family: 'Material Icons';
+    src: url('https://cdn.qwiklabs.com/fonts/material-icons.woff2') format('woff2');
+  }
+  
+  @font-face {
+    @include font_face_props;
+  
+    font-family: 'Google Symbols';
+    src: url('https://cdn.qwiklabs.com/fonts/google-symbols.woff2') format('woff2');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+  }
+  
+  .google-symbols {
+    font-family: 'Google Symbols';
+  }
+  
+  .google-material-icons {
+    font-family: 'Google Material Icons';
+  }
+  
+  .material-icons,
+  .google-symbols,
+  .google-material-icons {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+</style>
+
+<meta name="action-cable-url" content="/cable" />
+<script>
+//<![CDATA[
+window.gon={};gon.deployment="google-run";
+//]]>
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    if (arguments[0] === 'event') {
+      dataLayer.push({ event: arguments[1], eventParams: arguments[2] }, { eventParams: undefined });
+    } else {
+      dataLayer.push(arguments);
+    }
+  }
+  let gtmLoaded = false;
+  function glueCookieNotificationBarLoaded() {
+    if (!gtmLoaded) {
+      dataLayerInit(
+        false,
+        false,
+        false,
+        false,
+        'google-run'
+      );
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer',"GTM-MBRHNDG7");
+      pushPageEvent();
+      if (typeof sessEvent !== 'undefined') {
+        pushSessionEvent(sessEvent, sessLoginStatus, sessPreviousPath);
+      }
+      gtmLoaded = true;
+    }
+  }
+</script>
+<script src="https://cdn.qwiklabs.com/assets/hallofmirrors/polyfills/webcomponents-loader-2e147cb1679d97581f981243bfc2d1c03dc34a58.js"></script>
+<script src="https://cdn.qwiklabs.com/assets/head_scripts-78121e337319c81329ed63eb61196ea57f74a57d.js"></script>
+<script src="https://cdn.qwiklabs.com/assets/vendor-64a8f00d2c4f7491d2e5c39e6914bd8b28b18fbe.js"></script>
+<script src="https://cdn.qwiklabs.com/assets/application-725fcd876cccc8e7992035e6152f0132c543ca87.js"></script>
+<script src="https://cdn.qwiklabs.com/assets/hallofmirrors/hallofmirrors-4774c057fe147c25b376ea8f2b830ee1538517e2.js"></script>
+<script src="https://cdn.qwiklabs.com/nk_components/1.1.41/index.js"></script>
+<script src="https://support.google.com/inapp/api.js"></script>
+
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="VDxzsx35CQj967GlKG2T6FvhJvRmrd-xcUi2L3Pvl5A5tz1K1-KoQuNg_5zQRq2wvm3IDZ2zxb1pWyZ7o_Srgg" />
+<meta content='width=device-width, initial-scale=1.0, user-scalable=yes' name='viewport'>
+<meta content='1rRsY0INj8RvwB5EF5pwdxt2A2P9aDgAlsICaJ0d5w0' name='google-site-verification'>
+<meta content='#3681E4' property='msapplication-TileColor'>
+<meta content='/google_standard_32.svg' property='msapplication-TileImage'>
+<meta content='{&quot;userId&quot;:null,&quot;experimentIds&quot;:[&quot;reroute_new_interview_warmup&quot;,&quot;subscription_ux&quot;,&quot;switch_path_and_explore_headers&quot;,&quot;wipeout_hard_delete&quot;,&quot;search_autocomplete&quot;,&quot;in_context_all_labs&quot;,&quot;gamification_leaderboards&quot;,&quot;learning_plan_search&quot;,&quot;gamification_xp&quot;,&quot;canonical_domain_redirect&quot;,&quot;google_dev_payment&quot;,&quot;gamification_achievements&quot;,&quot;in_context_view&quot;,&quot;search_async&quot;,&quot;sso_redirect&quot;,&quot;gwg_catalog&quot;,&quot;entity_api_keys&quot;,&quot;catalog_filter_chips&quot;,&quot;use_mosaic&quot;,&quot;relaunch&quot;,&quot;banner_breadcrumbs&quot;,&quot;credly_integration_announcement_modal&quot;,&quot;course_exams&quot;,&quot;relaunch_subscriptions&quot;,&quot;relaunch_extra&quot;,&quot;remove_gdp_subscription&quot;,&quot;sitemap_poc&quot;,&quot;search_sort_by&quot;,&quot;cache_explore_page_result&quot;,&quot;learning_plan_slug&quot;,&quot;relaunch_collection_ai&quot;,&quot;show_new_course_exams&quot;,&quot;cdn_fonts&quot;,&quot;landing_page&quot;,&quot;show_org_catalog_button&quot;,&quot;gamification_streaks&quot;,&quot;hide_unpopular_filters&quot;,&quot;gwg_paid_chip&quot;,&quot;use_docebo_features&quot;,&quot;docebo_sync_org_support&quot;,&quot;relaunch_for_sso&quot;,&quot;gamification_ui&quot;,&quot;golden_lab_auto_locations_group_b&quot;,&quot;dashboard_jobs&quot;,&quot;relaunch_grid_list&quot;,&quot;onramp&quot;,&quot;alexandria_subscriptions_pagination&quot;,&quot;challenge_lab_fast_track&quot;,&quot;gamification&quot;,&quot;innovator_sign_in&quot;,&quot;credly&quot;,&quot;docebo_sync&quot;,&quot;interview_warmup_turndown&quot;,&quot;front_door_landing_page&quot;,&quot;golden_lab_auto_locations_group_a&quot;,&quot;innovator_gear_sign_in&quot;,&quot;search_suggestions&quot;,&quot;catalog_filters_button&quot;,&quot;gamification_leagues&quot;,&quot;discovery_lab_duration_estimate&quot;,&quot;one_tap&quot;,&quot;feedback&quot;,&quot;org_invite_link&quot;,&quot;docebo_ux&quot;,&quot;oauth_risc_shutoff&quot;]}' name='help-api-product-data'>
+<meta content='{&quot;groupIds&quot;:[]}' name='help-api-custom-data'>
+<meta content='Learn and earn with Google Skills, a platform that provides  free training and certifications for Google Cloud partners and beginners. Explore now.' name='description'>
+<meta content='Google Skills' name='author'>
+<meta content='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510' property='og:url'>
+<meta content='Anish Raj | Google Skills' property='og:title'>
+<meta content='website' property='og:type'>
+<meta content='/google_standard_32.svg' property='og:image'>
+<meta content='Google Skills' property='og:site_name'>
+<meta content='Learn and earn with Google Skills, a platform that provides  free training and certifications for Google Cloud partners and beginners. Explore now.' property='og:description'>
+
+
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=ar' hreflang='ar' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=de' hreflang='de' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=es' hreflang='es' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=fr' hreflang='fr' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=fr_CA' hreflang='fr-CA' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=he' hreflang='he' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=id' hreflang='id' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=it' hreflang='it' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=ja' hreflang='ja' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=ko' hreflang='ko' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=pl' hreflang='pl' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=pt_BR' hreflang='pt-BR' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=pt_PT' hreflang='pt-PT' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=ru' hreflang='ru' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=tr' hreflang='tr' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=uk' hreflang='uk' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=zh' hreflang='zh' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=zh_TW' hreflang='zh-TW' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510' hreflang='en' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510' hreflang='x-default' rel='alternate'>
+<link href='https://cdn.qwiklabs.com/X46FrQX4iLxHW5MxL8jICvgZM0evMEKscCeQO%2BazGdo%3D' rel='icon' type='image/x-icon'>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400|Roboto+Mono:400,700|Roboto:300,400,500,700|Google+Sans:300,400,500,700|Google+Sans+Display:400|Google+Sans+Text:400,500,700" />
+
+<link rel="stylesheet" href="https://cdn.qwiklabs.com/assets/application-f10c5be9d18303714ea6a0193edf46ddff12e4c8.css" media="all" />
+<link rel="stylesheet" href="https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.css" />
+
+
+<style>
+  :root {
+    --primary-text-on-surface-color: #355d9c;
+    --primary-text-on-surface-color-dark: #2f538b;
+    --primary-text-on-surface-color-darker: #29497a;
+    --primary-text-on-surface-color-darkest: #243e69;
+    --primary-surface-color: #586d8d;
+    --primary-surface-color-rgb: 88,109,141;
+    --primary-surface-color-light: #e0e4eb;
+    --primary-surface-color-lightest: #eff2f5;
+    --text-on-primary-color: #ffffff;
+    --accent-text-on-surface-color: #f000e8;
+    --accent-surface-color: #f9ab00;
+    --accent-surface-color-rgb: 249,171,0;
+    --accent-surface-color-light: #ffefcc;
+    --text-on-accent-color: #000000;
+  }
+</style>
+
+
+
+</head>
+<body class=''>
+<ql-drawer-container class='body-container' relaunch>
+<div class='sticky' slot='header'>
+<ql-toolbar class='app-toolbar' jumpEnabled role='banner'>
+<div class='toolbar-navigation' slot='navigation'>
+<ql-toggle-button animatedToggle="true" expandable="true" for="app-nav" onIcon="menu_open" offIcon="menu" label="Menu" class="always-show" data-tooltip-text="Menu"></ql-toggle-button>
+</div>
+<div class='toolbar-title gs-logo' slot='title'>
+<a class="custom-logo" aria-label="Google Skills" href="/"><div class="custom-logo"><img alt="Google Skills" height="24" aria-label="Google Skills" src="https://cdn.qwiklabs.com/lqJbxogu4tSLez1OvjDcIO8rwow6cPLwvrfIdmQLf6U%3D" /></div></a>
+</div>
+<div class='search-bar tablet-hide' slot='search'></div>
+<div class='toolbar-actions' slot='action'>
+<ql-icon-button class='mobile-hide' data-tooltip-text='Help' icon='help_outline' id='help-menu-button' label='Help options'></ql-icon-button>
+<ql-menu for='help-menu-button' id='help-menu'>
+<ql-menu-item data-analytics-action='opened_help' data-analytics-label='profile' label='Help Center' onclick='hallofmirrors.helpService.startHelp({&quot;productData&quot;:{&quot;userId&quot;:null},&quot;context&quot;:&quot;profile&quot;})'></ql-menu-item>
+<ql-menu-item href='mailto:support-skills@google.com' label='Email support'></ql-menu-item>
+<ql-menu-item href='https://reportingwidget.google.com/widget/54?cid=1&amp;url=https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?' label='Report Illegal Content'></ql-menu-item>
+</ql-menu>
+
+<ql-icon-button aria-expanded='false' aria-haspopup aria-label='More options' class='mobile-show' data-toggle='tooltip' icon='more_vert' id='mobile-more-menu-button' title='More options'></ql-icon-button>
+<ql-menu for='mobile-more-menu-button' id='mobile-more-menu'>
+
+
+<ql-menu-item aria-controls='help-submenu' aria-expanded='false' aria-haspopup='true' id='help-submenu-button' label='Help' role='button' tabindex='0'></ql-menu-item>
+<ql-menu-item aria-controls='language-submenu' aria-expanded='false' aria-haspopup='true' id='language-submenu-button' label='Language' role='button' tabindex='0'></ql-menu-item>
+</ql-menu>
+
+<ql-menu class='submenu' for='help-submenu-button' id='help-submenu'>
+<ql-menu-item data-analytics-action='opened_help' data-analytics-label='' label='Help Center' onclick='hallofmirrors.helpService.startHelp({&quot;productData&quot;:{&quot;userId&quot;:null},&quot;context&quot;:&quot;&quot;})'></ql-menu-item>
+<ql-menu-item href='mailto:support-skills@google.com' label='Email support'></ql-menu-item>
+<ql-menu-item href='https://reportingwidget.google.com/widget/54?cid=1&amp;url=https%3A%2F%2Fwww.skills.google%2Fpublic_profiles%2F11b2ae1b-c527-4251-b441-29021768b510%3F' label='Report Illegal Content'></ql-menu-item>
+</ql-menu>
+<ql-menu class='submenu' for='language-submenu-button' id='language-submenu'>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='ar' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=ar' label='العربية‬‎' lang='ar' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='de' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=de' label='Deutsch' lang='de' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='en' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=en' label='English' lang='en' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='es' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=es' label='español (Latinoamérica)' lang='es' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='fr' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=fr' label='français' lang='fr' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='fr_CA' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=fr_CA' label='français (Canada)' lang='fr-CA' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='he' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=he' label='עברית' lang='he' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='id' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=id' label='bahasa Indonesia' lang='id' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='it' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=it' label='italiano' lang='it' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='ja' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=ja' label='日本語' lang='ja' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='ko' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=ko' label='한국어' lang='ko' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='pl' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=pl' label='polski' lang='pl' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='pt_BR' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=pt_BR' label='português (Brasil)' lang='pt-BR' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='pt_PT' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=pt_PT' label='português (Portugal)' lang='pt-PT' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='ru' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=ru' label='русский' lang='ru' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='tr' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=tr' label='Türkçe' lang='tr' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='uk' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=uk' label='українська' lang='uk' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='zh' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=zh' label='简体中文' lang='zh' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='zh_TW' href='/public_profiles/11b2ae1b-c527-4251-b441-29021768b510?locale=zh_TW' label='繁體中文' lang='zh-TW' role='menuitem'></ql-menu-item>
+</ql-menu>
+
+<ql-button ariaLabel='Join by creating an account' data-analytics-action='clicked_header_join' data-analytics-actions='[&quot;clicked_header_join&quot;, &quot;navigation&quot;]' data-analytics-button-text='Join' data-analytics-label='Join' data-analytics-legacy-event-name='clicked_header_join' data-analytics-link-url='/users/sign_up' data-analytics-position='header' data-analytics-type='eventParams' href='/users/sign_up'>
+Join
+</ql-button>
+<ql-button data-analytics-action='clicked_header_sign_in' data-analytics-actions='[&quot;clicked_header_sign_in&quot;, &quot;navigation&quot;]' data-analytics-button-text='Sign in' data-analytics-label='Sign in' data-analytics-legacy-event-name='clicked_header_sign_in' data-analytics-link-url='/users/sign_in' data-analytics-position='header' data-analytics-type='eventParams' href='/users/sign_in'>
+Sign in
+</ql-button>
+
+
+</div>
+</ql-toolbar>
+</div>
+<ql-drawer id='app-nav' openWidth='15' relaunch responsive='768' slot='drawer' width='6' widthUnit='rem'>
+<nav class='ql-sidenav relaunch'>
+<ql-fab expandable href='/users/sign_in' icon='login' label='Sign in'></ql-fab>
+<ql-sidenav-item href='/' icon='home' label='Home' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;/&#39;, label:&#39;Home&#39;})' relaunch>
+
+</ql-sidenav-item>
+
+<ql-sidenav-item href='/catalog' icon='book_2' label='Catalog' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;/catalog&#39;, label:&#39;Catalog&#39;})' relaunch>
+
+</ql-sidenav-item>
+
+<ql-sidenav-item href='/paths' icon='conversion_path' label='Paths' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;/paths&#39;, label:&#39;Paths&#39;})' relaunch>
+
+</ql-sidenav-item>
+
+<ql-sidenav-item expandable icon='category' label='Collections' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;&#39;, label:&#39;Collections&#39;})' relaunch>
+<div class='sub-items' slot='submenu'>
+<ql-sidenav-item href='/collections/ai-boost-bites' label='AI Boost Bites' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;/collections/ai-boost-bites&#39;, label:&#39;AI Boost Bites&#39;})' relaunch>
+
+</ql-sidenav-item>
+
+<ql-sidenav-item href='/collections/career-certificates' label='Career Certificates' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;/collections/career-certificates&#39;, label:&#39;Career Certificates&#39;})' relaunch>
+
+</ql-sidenav-item>
+
+<ql-sidenav-item href='/collections/cloud' label='Cloud' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;/collections/cloud&#39;, label:&#39;Cloud&#39;})' relaunch>
+
+</ql-sidenav-item>
+
+<ql-sidenav-item href='/collections/deepmind' label='DeepMind' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;/collections/deepmind&#39;, label:&#39;DeepMind&#39;})' relaunch>
+
+</ql-sidenav-item>
+
+</div>
+
+</ql-sidenav-item>
+
+<ql-sidenav-item href='/subscriptions' icon='subscriptions' label='Subscriptions' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;/subscriptions&#39;, label:&#39;Subscriptions&#39;})' relaunch>
+
+</ql-sidenav-item>
+
+</nav>
+
+</ql-drawer>
+<ql-drawer-content class='body-content' slot='drawer-content'>
+<div class='banner'>
+<div id='callout-container'>
+</div>
+
+</div>
+<div class='page-header'>
+<div class='page-main-banner'>
+<div class='page-main-banner-breadcrumbs'>
+
+</div>
+<div class='page-main-banner-console-free-trial'>
+<div class='console-free-trial'>
+<p class='console-free-trial-content ql-body-medium'>
+Apply your skills in Google Cloud console
+</p>
+<div class='console-free-trial-actions'>
+<ql-button data-analytics-action='gcp_cta' data-analytics-position='free trial banner' data-analytics-type='eventParams' elevated href='https://console.cloud.google.com/freetrial' label='Get started' target='_blank'></ql-button>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<main id='jump-content'>
+
+<div class='text--center'>
+<ql-avatar class='profile-avatar l-mbl' size='160' src='https://lh3.googleusercontent.com/a/ACg8ocIa9AU0lI4KSbEIHN5CnXMtmyDtcPBawXhZLhYk-OUGgJ8=s320-c'></ql-avatar>
+<h1 class='ql-display-small'>
+Anish Raj
+</h1>
+<p class='ql-body-large l-mbl'>
+Member since 2024
+</p>
+<div class='profile-badges'>
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510/badges/16928248"><img role="presentation" src="https://cdn.qwiklabs.com/XG7YcUxurM6j1isLPt%2BK2RQGRlw1xYyfZWr6xqLII58%3D" />
+</a><span class='ql-title-medium l-mts'>
+Google Cloud: Prompt Engineering Guide
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Jul 13, 2025 EDT
+</span>
+<ql-button ariaLabel='Learn more about Google Cloud: Prompt Engineering Guide' label='Learn more' modal='public-profile-award-modal-0' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510/badges/13627849"><img role="presentation" src="https://cdn.qwiklabs.com/MNO7kjzS9dDqb4AdDVRGA7ITSOpYKQBBTEoGKO5gPpI%3D" />
+</a><span class='ql-title-medium l-mts'>
+The Arcade Trivia January 2025 Week 2
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Jan 20, 2025 EST
+</span>
+<ql-button ariaLabel='Learn more about The Arcade Trivia January 2025 Week 2' label='Learn more' modal='public-profile-award-modal-1' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510/badges/13627713"><img role="presentation" src="https://cdn.qwiklabs.com/GxL4iKBiEZDhHuFZyfFkYSvR19Ua9oH7vDmruTsmi2Y%3D" />
+</a><span class='ql-title-medium l-mts'>
+The Arcade Trivia January 2025 Week 1
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Jan 20, 2025 EST
+</span>
+<ql-button ariaLabel='Learn more about The Arcade Trivia January 2025 Week 1' label='Learn more' modal='public-profile-award-modal-2' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510/badges/9556451"><img role="presentation" src="https://cdn.qwiklabs.com/YTXt%2FEJ6MtZJvrkcagHfAwCtzCuS4W4Jg%2FTNgVV%2BuPs%3D" />
+</a><span class='ql-title-medium l-mts'>
+The Arcade Trivia June 2024 Week 3
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Jun 22, 2024 EDT
+</span>
+<ql-button ariaLabel='Learn more about The Arcade Trivia June 2024 Week 3' label='Learn more' modal='public-profile-award-modal-3' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510/badges/9556151"><img role="presentation" src="https://cdn.qwiklabs.com/srgKP5XEH3e5G6vJ6%2B11VIGEwxiiA%2FwMcQQsx0Cp4hU%3D" />
+</a><span class='ql-title-medium l-mts'>
+The Arcade Trivia June 2024 Week 2
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Jun 22, 2024 EDT
+</span>
+<ql-button ariaLabel='Learn more about The Arcade Trivia June 2024 Week 2' label='Learn more' modal='public-profile-award-modal-4' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510/badges/9553475"><img role="presentation" src="https://cdn.qwiklabs.com/zrIPVL1HY%2FI3eHOAB1oG1TPVy9Bxv4C9xAUo1DtGS8Q%3D" />
+</a><span class='ql-title-medium l-mts'>
+The Arcade Trivia June 2024 Week 1
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Jun 21, 2024 EDT
+</span>
+<ql-button ariaLabel='Learn more about The Arcade Trivia June 2024 Week 1' label='Learn more' modal='public-profile-award-modal-5' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510/badges/8642929"><img role="presentation" src="https://cdn.qwiklabs.com/k9hHTc1AUlE6nM0naGTEqz6%2FAbgWDZY6Qbm272Ljt9Y%3D" />
+</a><span class='ql-title-medium l-mts'>
+Level 1 : Getting Started with GCP
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 14, 2024 EDT
+</span>
+<ql-button ariaLabel='Learn more about Level 1 : Getting Started with GCP' label='Learn more' modal='public-profile-award-modal-6' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510/badges/8579227"><img role="presentation" src="https://cdn.qwiklabs.com/nwYY5rOZlZmGrYLif9dFxsfsZnBYjOICyN%2F9g03XbE4%3D" />
+</a><span class='ql-title-medium l-mts'>
+The Arcade Trivia April 2024 Week 1
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr  8, 2024 EDT
+</span>
+<ql-button ariaLabel='Learn more about The Arcade Trivia April 2024 Week 1' label='Learn more' modal='public-profile-award-modal-7' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510/badges/8459175"><img role="presentation" src="https://cdn.qwiklabs.com/ILa%2Fld9ZfSV2az7jwjoDIvXvGmTcYm%2BlSiOzFz83fOg%3D" />
+</a><span class='ql-title-medium l-mts'>
+The Arcade Trivia March 2024 Week 3
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Mar 27, 2024 EDT
+</span>
+<ql-button ariaLabel='Learn more about The Arcade Trivia March 2024 Week 3' label='Learn more' modal='public-profile-award-modal-8' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510/badges/8452726"><img role="presentation" src="https://cdn.qwiklabs.com/HyzqVdTbzDUmjrGuB%2FgrA8JNupet0JP15WLLQz7xwTs%3D" />
+</a><span class='ql-title-medium l-mts'>
+Introduction to Responsible AI
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Mar 26, 2024 EDT
+</span>
+<ql-button ariaLabel='Learn more about Introduction to Responsible AI' label='Learn more' modal='public-profile-award-modal-9' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510/badges/8378385"><img role="presentation" src="https://cdn.qwiklabs.com/NJLuMz4v2oi%2FGBN8hRkGPZmtY%2Fb4jzoHU%2BVi8zepwQY%3D" />
+</a><span class='ql-title-medium l-mts'>
+The Arcade Trivia March 2024 Week 1
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Mar 19, 2024 EDT
+</span>
+<ql-button ariaLabel='Learn more about The Arcade Trivia March 2024 Week 1' label='Learn more' modal='public-profile-award-modal-10' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510/badges/8377997"><img role="presentation" src="https://cdn.qwiklabs.com/FuvsI0SvuoWoMG0yRg50Jkgqyyvm3zrcCNHH0sW9XfI%3D" />
+</a><span class='ql-title-medium l-mts'>
+Introduction to Generative AI 
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Mar 19, 2024 EDT
+</span>
+<ql-button ariaLabel='Learn more about Introduction to Generative AI' label='Learn more' modal='public-profile-award-modal-11' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/11b2ae1b-c527-4251-b441-29021768b510/badges/8377899"><img role="presentation" src="https://cdn.qwiklabs.com/%2FZ5%2FvGqBhBen2QXXDidmccOtBoQfcKZzRfXpkC57dCs%3D" />
+</a><span class='ql-title-medium l-mts'>
+Level 3: GenAIus Heroes
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Mar 19, 2024 EDT
+</span>
+<ql-button ariaLabel='Learn more about Level 3: GenAIus Heroes' label='Learn more' modal='public-profile-award-modal-12' outlined tip='Learn more'></ql-button>
+</div>
+
+</div>
+</div>
+
+</main>
+
+</ql-drawer-content>
+</ql-drawer-container>
+
+<span class='hidden' id='flash-sibling-before'></span>
+<ql-snackbar></ql-snackbar>
+
+<script data-glue-cookie-notification-bar-category='2A' src='https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.js'></script>
+
+
+
+<ql-dialog dismissalLabel='Dismiss' headline='Google Cloud: Prompt Engineering Guide' id='public-profile-award-modal-0'>
+<p>Google Cloud : Prompt Engineering Guide examines generative AI tools, how they work. We'll explore how to combine Google Cloud knowledge with prompt engineering to improve Gemini responses.</p>
+<ql-button href='/course_templates/1132' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='The Arcade Trivia January 2025 Week 2' id='public-profile-award-modal-1'>
+<p>Hey there! You're invited to game on with the Arcade Trivia for January Week 2! Play throughout the month and boost your cloud learning journey. Every week, we'll release a new set of questions to test your knowledge of Google Cloud Platform. Get started now and earn the January Trivia Week 2 badge!</p>
+<ql-button href='/games/1820' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='The Arcade Trivia January 2025 Week 1' id='public-profile-award-modal-2'>
+<p>Hey there! You're invited to game on with the Arcade Trivia for January Week 1! Play throughout the month and boost your cloud learning journey. Every week, we'll release a new set of questions to test your knowledge of Google Cloud Platform. Get started now and earn the January Trivia Week 1 badge!</p>
+<ql-button href='/games/1771' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='The Arcade Trivia June 2024 Week 3' id='public-profile-award-modal-3'>
+<p>Hey there! You're invited to game on with the Arcade Trivia for June Week 3! Play throughout the month and boost your cloud learning journey. Every week, we'll release a new set of questions to test your knowledge of Google Cloud Platform. Get started now and earn the June Trivia Week 3 badge!</p>
+<ql-button href='/games/1432' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='The Arcade Trivia June 2024 Week 2' id='public-profile-award-modal-4'>
+<p>Hey there! You're invited to game on with the Arcade Trivia for June Week 2! Play throughout the month and boost your cloud learning journey. Every week, we'll release a new set of questions to test your knowledge of Google Cloud Platform. Get started now and earn the June Trivia Week 2 badge!</p>
+<ql-button href='/games/1428' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='The Arcade Trivia June 2024 Week 1' id='public-profile-award-modal-5'>
+<p>Hey there! You're invited to game on with the Arcade Trivia for June Week 1! Play throughout the month and boost your cloud learning journey. Every week, we'll release a new set of questions to test your knowledge of Google Cloud Platform. Get started now and earn the June Trivia Week 1 badge!</p>
+<ql-button href='/games/1418' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='Level 1 : Getting Started with GCP' id='public-profile-award-modal-6'>
+<p>Businesses are flocking to the cloud, and the demand for skilled professionals is skyrocketing. Join the trend and level up your resume with in-demand skills and earn a Google Cloud Credential to showcase your expertise. No experience necessary – get started today!</p>
+<ql-button href='/games/1358' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='The Arcade Trivia April 2024 Week 1' id='public-profile-award-modal-7'>
+<p>Hey there! You're invited to game on with the Arcade Trivia for April Week 1! Play throughout the month and boost your cloud learning journey. Every week, we'll release a new set of questions to test your knowledge of Google Cloud Platform. Get started now and earn the April Trivia Week 1 badge!</p>
+<ql-button href='/games/1357' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='The Arcade Trivia March 2024 Week 3' id='public-profile-award-modal-8'>
+<p>Hey there! You're invited to game on with the Arcade Trivia for March Week 3! Play throughout the month and boost your cloud learning journey. Every week, we'll release a new set of questions to test your knowledge of Google Cloud Platform. Get started now and earn the March Trivia Week 3 badge!</p>
+<ql-button href='/games/1342' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='Introduction to Responsible AI' id='public-profile-award-modal-9'>
+<p>This is an introductory-level microlearning course aimed at explaining what responsible AI is, why it's important, and how Google implements responsible AI in their products. It also introduces Google's 3 AI principles.</p>
+<ql-button href='/course_templates/554' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='The Arcade Trivia March 2024 Week 1' id='public-profile-award-modal-10'>
+<p>Hey there! You're invited to game on with the Arcade Trivia for March Week 1! Play throughout the month and boost your cloud learning journey. Every week, we'll release a new set of questions to test your knowledge of Google Cloud Platform. Get started now and earn the March Trivia Week 1 badge!</p>
+<ql-button href='/games/1312' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='Introduction to Generative AI ' id='public-profile-award-modal-11'>
+<p>This is an introductory level microlearning course aimed at explaining what Generative AI is, how it is used, and how it differs from traditional machine learning methods. It also covers Google Tools to help you develop your own Gen AI apps.</p>
+<ql-button href='/course_templates/536' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='Level 3: GenAIus Heroes' id='public-profile-award-modal-12'>
+<p>Employers are actively seeking skilled Gen AI experts! Develop your expertise in the Cloud by gaining hands-on experience with tools and technologies that can be used to full effect by the application of Gen AI. Master core concepts and prepare yourself for the future in this field while earning a Google Cloud Credential! No prior experience needed! </p>
+<ql-button href='/games/1311' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+
+
+<script>
+  document.addEventListener("turbo:load", function () {
+    ql.initMaterialInputs();
+    initChosen();
+    initTabs();
+    ql.list.init();
+    ql.favoriting.init();
+    ql.header.myAccount.init();
+    initTooltips();
+    ql.autocomplete.init();
+    ql.modals.init();
+    ql.toggleButtons.init();
+    Turbo.session.drive = false;
+    ql.messages.init();
+  ql.jumpContent.init();
+  
+  }, {once: true});
+</script>
+<script>
+  document.addEventListener("turbo:load", () => ql.analytics.init());
+  document.addEventListener("turbo:frame-load", () => ql.analytics.init());
+</script>
+<script>
+  document.addEventListener("turbo:load", function () {
+    ql.celebrations.init({"course_complete":"COURSE COMPLETED","document_complete":"DOCUMENT COMPLETED","experience_label":"Experience points","lab_complete":"LAB COMPLETED","learning_plan_complete":"PATH COMPLETED","lesson_complete":"LESSON COMPLETED","quiz_complete":"QUIZ COMPLETED","video_complete":"VIDEO COMPLETED"});
+    ql.achievements.init();
+  }, {once: true});
+</script>
+
+</body>
+</html>
+
+

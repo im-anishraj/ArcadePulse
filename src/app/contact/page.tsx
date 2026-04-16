@@ -18,7 +18,7 @@ export default function ContactPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h1 className="text-3xl font-extrabold mb-4 gradient-text">Contact Us</h1>
-      <p className="text-lg text-[var(--text-secondary)] mb-12 max-w-2xl">
+      <p className="text-lg text-(--text-secondary) mb-12 max-w-2xl">
         Have questions, feedback, or suggestions? We&apos;d love to hear from you. Reach out through the form below or join our community channels.
       </p>
 
@@ -26,7 +26,7 @@ export default function ContactPage() {
         {/* Contact Form */}
         <div className="card p-8">
           <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
-            <Mail size={20} className="text-[var(--accent)]" />
+            <Mail size={20} className="text-(--accent)" />
             Send a Message
           </h2>
 
@@ -36,14 +36,14 @@ export default function ContactPage() {
                 <Send size={24} className="text-green-400" />
               </div>
               <h3 className="text-lg font-bold text-green-400 mb-2">Message Sent!</h3>
-              <p className="text-sm text-[var(--text-secondary)]">
+              <p className="text-sm text-(--text-secondary)">
                 Thank you for reaching out. We&apos;ll get back to you soon.
               </p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-sm font-medium mb-1.5 text-[var(--text-secondary)]">
+                <label className="block text-sm font-medium mb-1.5 text-(--text-secondary)">
                   Your Name
                 </label>
                 <input
@@ -51,12 +51,12 @@ export default function ContactPage() {
                   required
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-[var(--bg-primary)] border border-[var(--border-color)] text-sm text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:outline-none focus:border-[var(--accent)] transition-colors"
+                  className="w-full px-4 py-3 rounded-xl bg-(--bg-primary) border border-(--border-color) text-sm text-(--text-primary) placeholder-(--text-muted) focus:outline-none focus:border-(--accent) transition-colors"
                   placeholder="Enter your name"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-1.5 text-[var(--text-secondary)]">
+                <label className="block text-sm font-medium mb-1.5 text-(--text-secondary)">
                   Email Address
                 </label>
                 <input
@@ -64,12 +64,12 @@ export default function ContactPage() {
                   required
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-[var(--bg-primary)] border border-[var(--border-color)] text-sm text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:outline-none focus:border-[var(--accent)] transition-colors"
+                  className="w-full px-4 py-3 rounded-xl bg-(--bg-primary) border border-(--border-color) text-sm text-(--text-primary) placeholder-(--text-muted) focus:outline-none focus:border-(--accent) transition-colors"
                   placeholder="your@email.com"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-1.5 text-[var(--text-secondary)]">
+                <label className="block text-sm font-medium mb-1.5 text-(--text-secondary)">
                   Message
                 </label>
                 <textarea
@@ -77,7 +77,7 @@ export default function ContactPage() {
                   rows={5}
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-[var(--bg-primary)] border border-[var(--border-color)] text-sm text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:outline-none focus:border-[var(--accent)] transition-colors resize-none"
+                  className="w-full px-4 py-3 rounded-xl bg-(--bg-primary) border border-(--border-color) text-sm text-(--text-primary) placeholder-(--text-muted) focus:outline-none focus:border-(--accent) transition-colors resize-none"
                   placeholder="Your message..."
                 />
               </div>
@@ -93,10 +93,10 @@ export default function ContactPage() {
         <div className="space-y-6">
           <div className="card p-6">
             <h3 className="font-bold mb-3 flex items-center gap-2">
-              <MessageSquare size={18} className="text-[var(--accent)]" />
+              <MessageSquare size={18} className="text-(--accent)" />
               Community Channels
             </h3>
-            <p className="text-sm text-[var(--text-secondary)] mb-4">
+            <p className="text-sm text-(--text-secondary) mb-4">
               Join our community for real-time support and discussions.
             </p>
             <div className="space-y-3">
@@ -109,7 +109,7 @@ export default function ContactPage() {
                 <Send size={18} className="text-[#0088cc]" />
                 <div>
                   <div className="text-sm font-semibold">Telegram Community</div>
-                  <div className="text-xs text-[var(--text-muted)]">5,000+ members</div>
+                  <div className="text-xs text-(--text-muted)">5,000+ members</div>
                 </div>
               </a>
               <a
@@ -121,7 +121,7 @@ export default function ContactPage() {
                 <MessageSquare size={18} className="text-[#25D366]" />
                 <div>
                   <div className="text-sm font-semibold">WhatsApp Group</div>
-                  <div className="text-xs text-[var(--text-muted)]">Active discussions</div>
+                  <div className="text-xs text-(--text-muted)">Active discussions</div>
                 </div>
               </a>
             </div>
@@ -129,7 +129,7 @@ export default function ContactPage() {
 
           <div className="card p-6">
             <h3 className="font-bold mb-2">Response Time</h3>
-            <p className="text-sm text-[var(--text-secondary)]">
+            <p className="text-sm text-(--text-secondary)">
               We typically respond within 24-48 hours. For urgent queries, please use our Telegram community for faster support.
             </p>
           </div>

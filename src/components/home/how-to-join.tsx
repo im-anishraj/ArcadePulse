@@ -18,7 +18,7 @@ export default function HowToJoinSection() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             How to Join Google Cloud Arcade
           </h2>
-          <p className="text-[var(--text-secondary)]">
+          <p className="text-(--text-secondary)">
             Start earning arcade points and unlock rewards with ArcadeCalc
           </p>
         </motion.div>
@@ -34,19 +34,19 @@ export default function HowToJoinSection() {
               className="card p-6 relative"
             >
               {/* Step number */}
-              <div className="absolute -top-3 -left-3 w-10 h-10 rounded-full bg-gradient-to-br from-[var(--accent)] to-[var(--accent-deep)] flex items-center justify-center text-white font-bold text-sm shadow-lg">
+              <div className="absolute -top-3 -left-3 w-10 h-10 rounded-full bg-linear-to-br from-(--accent) to-(--accent-deep) flex items-center justify-center text-white font-bold text-sm shadow-lg">
                 {step.step}
               </div>
 
               <div className="ml-4">
                 <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
-                <p className="text-sm text-[var(--text-secondary)] mb-4">
+                <p className="text-sm text-(--text-secondary) mb-4">
                   {step.description}
                 </p>
                 {step.link.startsWith('/') ? (
                   <Link
                     href={step.link}
-                    className="inline-flex items-center gap-1 text-sm font-semibold text-[var(--accent)] hover:underline"
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-(--accent) hover:underline"
                   >
                     Get Started <ExternalLink size={14} />
                   </Link>
@@ -55,7 +55,7 @@ export default function HowToJoinSection() {
                     href={step.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-sm font-semibold text-[var(--accent)] hover:underline"
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-(--accent) hover:underline"
                   >
                     Get Started <ExternalLink size={14} />
                   </a>

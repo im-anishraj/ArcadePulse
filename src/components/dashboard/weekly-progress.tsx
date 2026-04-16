@@ -17,7 +17,7 @@ export default function WeeklyProgress() {
     <div className="card p-6">
       <div className="flex items-center gap-2 mb-4">
         <h3 className="font-semibold">Weekly Progress</h3>
-        <Info size={16} className="text-[var(--text-muted)]" />
+        <Info size={16} className="text-(--text-muted)" />
       </div>
 
       <div className="h-48">

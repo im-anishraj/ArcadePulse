@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   const values = [
     {
-      icon: <Target size={24} className="text-[var(--accent)]" />,
+      icon: <Target size={24} className="text-(--accent)" />,
       title: 'Our Mission',
       description: 'To empower Google Cloud learners with the best tools to track, analyze, and optimize their Arcade journey.',
     },
@@ -33,7 +33,7 @@ export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h1 className="text-3xl font-extrabold mb-4 gradient-text">About ArcadeCalc</h1>
-      <p className="text-lg text-[var(--text-secondary)] mb-12 max-w-2xl">
+      <p className="text-lg text-(--text-secondary) mb-12 max-w-2xl">
         ArcadeCalc is the ultimate companion for Google Cloud Arcade participants. We help you track your progress, calculate your points, and compete on leaderboards — all in one beautiful, intuitive platform.
       </p>
 
@@ -47,7 +47,7 @@ export default function AboutPage() {
         ].map((stat) => (
           <div key={stat.label} className="card p-4 text-center">
             <div className="text-2xl font-extrabold gradient-text">{stat.value}</div>
-            <div className="text-xs text-[var(--text-muted)]">{stat.label}</div>
+            <div className="text-xs text-(--text-muted)">{stat.label}</div>
           </div>
         ))}
       </div>
@@ -57,12 +57,12 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
         {values.map((v) => (
           <div key={v.title} className="card p-6 flex gap-4">
-            <div className="w-12 h-12 rounded-xl bg-[var(--bg-primary)] border border-[var(--border-color)] flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 rounded-xl bg-(--bg-primary) border border-(--border-color) flex items-center justify-center shrink-0">
               {v.icon}
             </div>
             <div>
               <h3 className="font-semibold mb-1">{v.title}</h3>
-              <p className="text-sm text-[var(--text-secondary)]">{v.description}</p>
+              <p className="text-sm text-(--text-secondary)">{v.description}</p>
             </div>
           </div>
         ))}
@@ -71,14 +71,14 @@ export default function AboutPage() {
       {/* Creator */}
       <div className="card p-8 text-center">
         <h2 className="text-2xl font-bold mb-4">Built with 💜</h2>
-        <p className="text-[var(--text-secondary)] mb-4">
+        <p className="text-(--text-secondary) mb-4">
           ArcadeCalc was created and is maintained by passionate Google Cloud community members dedicated to helping learners succeed in their cloud journey.
         </p>
         <a
           href="https://www.linkedin.com/in/deepanshu-prajapati01/"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-[var(--accent)] font-semibold hover:underline"
+          className="inline-flex items-center gap-2 text-(--accent) font-semibold hover:underline"
         >
           Meet the Creator →
         </a>

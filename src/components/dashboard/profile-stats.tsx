@@ -10,7 +10,7 @@ export default function ProfileStats() {
     {
       label: 'Arcade Points',
       value: profile?.totalPoints ?? 0,
-      icon: <Trophy size={20} className="text-[var(--accent)]" />,
+      icon: <Trophy size={20} className="text-(--accent)" />,
     },
     {
       label: 'Leaderboard',
@@ -28,18 +28,18 @@ export default function ProfileStats() {
     <div className="card p-6">
       <div className="flex items-center gap-2 mb-4">
         <h3 className="font-semibold">Profile Stats</h3>
-        <Info size={16} className="text-[var(--text-muted)]" />
+        <Info size={16} className="text-(--text-muted)" />
       </div>
 
       <div className="space-y-4">
         {stats.map((stat) => (
           <div
             key={stat.label}
-            className="flex items-center justify-between py-2 border-b border-[var(--border-color)] last:border-0"
+            className="flex items-center justify-between py-2 border-b border-(--border-color) last:border-0"
           >
             <div className="flex items-center gap-3">
               {stat.icon}
-              <span className="text-sm text-[var(--text-secondary)]">
+              <span className="text-sm text-(--text-secondary)">
                 {stat.label}
               </span>
             </div>

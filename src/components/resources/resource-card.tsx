@@ -23,7 +23,7 @@ export default function ResourceCard({ card, index }: ResourceCardProps) {
     >
       <div>
         <h3 className="text-lg font-bold mb-3">{card.title}</h3>
-        <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-4">
+        <p className="text-sm text-(--text-secondary) leading-relaxed mb-4">
           {card.description}
         </p>
       </div>
@@ -33,14 +33,14 @@ export default function ResourceCard({ card, index }: ResourceCardProps) {
           href={card.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-sm font-semibold text-[var(--accent)] hover:underline"
+          className="inline-flex items-center gap-1 text-sm font-semibold text-(--accent) hover:underline"
         >
           {card.linkText} <ExternalLink size={14} />
         </a>
       ) : (
         <Link
           href={card.link}
-          className="inline-flex items-center gap-1 text-sm font-semibold text-[var(--accent)] hover:underline"
+          className="inline-flex items-center gap-1 text-sm font-semibold text-(--accent) hover:underline"
         >
           {card.linkText}
         </Link>
